@@ -2,12 +2,6 @@ package com.pg.utils
 import com.typesafe.config.Config
 
 object Constants {
-  //  val ACCESS_KEY = "<ACCESS_KEY>"
-  //  val SECRET_ACCESS_KEY = "<SECRET_ACCESS_KEY>"
-  //  val S3_BUCKET = "<BUCKET_NAME>"
-  val ACCESS_KEY = "AKIAQSQU4YQMRUHTRP2R"
-  val SECRET_ACCESS_KEY = "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"
-  val S3_BUCKET = "kvvreddy-bucket"
   val ERROR = "ERROR"
 
   def getRedshiftJdbcUrl(redshiftConfig: Config): String = {

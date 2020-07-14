@@ -5,7 +5,7 @@ import com.typesafe.config.ConfigFactory
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.current_date
 
-object SourceDataFunction {
+object SourceDataLoading {
   def main(args: Array[String]): Unit = {
     val rootConfig = ConfigFactory.load("application.conf").getConfig("conf")
     val sftpConfig = rootConfig.getConfig("sftp_conf")
@@ -70,8 +70,3 @@ object SourceDataFunction {
 
 
   }
-
-
-
-
-
